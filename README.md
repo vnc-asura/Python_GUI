@@ -36,7 +36,7 @@ depósitos) de uma conta e salve em um arquivo cujo o nome será o número da co
 deve conter a data, o tipo de operação e o valor (separados por vírgulas), além do saldo final da
 conta.
 
-### Resultados:
+### Resultado:
 
 |Tela inicial do sistema bancário|
 |:---:|
