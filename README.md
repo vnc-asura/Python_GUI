@@ -36,6 +36,32 @@ depósitos) de uma conta e salve em um arquivo cujo o nome será o número da co
 deve conter a data, o tipo de operação e o valor (separados por vírgulas), além do saldo final da
 conta.
 
+#### Considere as seguintes classes:
+```
+class Banco:
+  def __init__(self, numero, nome):
+    self.__num = num
+    self.__nome = nome
+    self.__contas = []
+  //Métodos
+```
+```
+class Conta:
+  def __init__(self, n, cli, sal):
+    self.__numero = n
+    self.__titular = cli
+    self.__saldo = sal
+  //Métodos
+```
+```
+class Cliente:
+  def __init__(self, n, e, cpf):
+    self.__nome = n    
+    self.__endereco = e
+    self.__CPF = cpf
+  //Métodos
+```
+
 ### Resultado:
 
 |Tela inicial do sistema bancário|
