@@ -1,6 +1,6 @@
 # Projetos GUI
 ## Sistema bancário
-Trabalho prático em python aplicando conceitos de __GUI__ e __OOP__ na criação de sistema bancário com o pacote tkinter e o modulo ttk(ThemedTk).
+Trabalho prático em python aplicando conceitos de __GUI__ e __OOP__ na criação de um sistema bancário com o pacote tkinter e o modulo ttk(ThemedTk).
 ### Instruções:
 1. Implemente uma interface gráfica para o sistema bancário que permita instanciar outras
 janelas do sistema por meio do widget Menu?
@@ -37,6 +37,7 @@ deve conter a data, o tipo de operação e o valor (separados por vírgulas), al
 conta.
 
 ### Resultados:
+
 |Tela inicial do sistema bancário|
 |:---:|
 |![Tela inicial do sistema bancário](https://github.com/user-attachments/assets/01f39e0c-e98d-416a-bd6a-16d6ba5babe4)|
