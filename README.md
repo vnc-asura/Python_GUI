@@ -2,7 +2,7 @@
 ---
 __Conteúdos:__
 * [__1. Sistema bancário__](https://github.com/vnc-asura/Python_GUI/tree/main?tab=readme-ov-file#1-sistema-banc%C3%A1rio)
-   * [1.1 Instruções](https://github.com/vnc-asura/Python_GUI/tree/main#11-instru%C3%A7%C3%B5es)
+   * [1.1 Instruções](https://github.com/vnc-asura/Python_GUI/tree/main?tab=readme-ov-file#11-instru%C3%A7%C3%B5es)
    * [1.2 Resultados](https://github.com/vnc-asura/Python_GUI/tree/main?tab=readme-ov-file#12-resultado)
 ---
 ## 1. Sistema bancário
