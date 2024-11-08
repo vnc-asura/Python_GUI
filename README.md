@@ -6,10 +6,10 @@ __Conteúdos:__
    * [1.2. Resultados](https://github.com/vnc-asura/Python_GUI/tree/main?tab=readme-ov-file#12-resultado)
 * [__2. Gerenciador patrimonial__](https://github.com/vnc-asura/Python_GUI#2-gerenciador-patrimonial)
    * [2.1. Funcionalidades](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#21-funcionalidades)
-   * [2.2. Banco de dados](https://github.com/vnc-asura/Python_GUI/edit/main/README.md#22-banco-de-dados)
-     * [2.2.1. DER](https://github.com/vnc-asura/Python_GUI/edit/main/README.md#221-der)
+   * [2.2. Banco de dados](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#22-banco-de-dados)
+     * [2.2.1. DER](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#221-der)
      * [2.2.2. Dump](https://github.com/vnc-asura/Python_GUI/edit/main/README.md#222-dump)
-   * [2.3. Resultado](https://github.com/vnc-asura/Python_GUI/edit/main/README.md#24-resultado)
+   * [2.3. Resultado](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#23-resultado)
 ---
 ## 1. Sistema bancário
 Trabalho prático em python aplicando conceitos de __GUI__ e __OOP__ na criação de um sistema bancário com o pacote tkinter e o modulo ttk(ThemedTk).
