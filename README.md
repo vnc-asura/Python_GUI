@@ -8,7 +8,7 @@ __Conteúdos:__
    * [2.1. Funcionalidades](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#21-funcionalidades)
    * [2.2. Banco de dados](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#22-banco-de-dados)
      * [2.2.1. DER](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#221-der)
-     * [2.2.2. Dump](https://github.com/vnc-asura/Python_GUI/edit/main/README.md#222-dump)
+     * [2.2.2. Dump](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#222-dump)
    * [2.3. Resultado](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#23-resultado)
 ---
 ## 1. Sistema bancário
