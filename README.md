@@ -4,12 +4,12 @@ __Conteúdos:__
 * [__1. Sistema bancário__](https://github.com/vnc-asura/Python_GUI/tree/main?tab=readme-ov-file#1-sistema-banc%C3%A1rio)
    * [1.1. Instruções](https://github.com/vnc-asura/Python_GUI/tree/main?tab=readme-ov-file#11-instru%C3%A7%C3%B5es)
    * [1.2. Resultados](https://github.com/vnc-asura/Python_GUI/tree/main?tab=readme-ov-file#12-resultado)
-* [__2. Gerenciador patrimonial__]()
-   * [2.1. Funcionalidades]()
-   * [2.2. Banco de dados]()
-     * [2.2.1. DER]()
-     * [2.2.2. Dump]()
-   * [2.3. Resultado]()
+* [__2. Gerenciador patrimonial__](https://github.com/vnc-asura/Python_GUI#2-gerenciador-patrimonial)
+   * [2.1. Funcionalidades](https://github.com/vnc-asura/Python_GUI?tab=readme-ov-file#21-funcionalidades)
+   * [2.2. Banco de dados](https://github.com/vnc-asura/Python_GUI/edit/main/README.md#22-banco-de-dados)
+     * [2.2.1. DER](https://github.com/vnc-asura/Python_GUI/edit/main/README.md#221-der)
+     * [2.2.2. Dump](https://github.com/vnc-asura/Python_GUI/edit/main/README.md#222-dump)
+   * [2.3. Resultado](https://github.com/vnc-asura/Python_GUI/edit/main/README.md#24-resultado)
 ---
 ## 1. Sistema bancário
 Trabalho prático em python aplicando conceitos de __GUI__ e __OOP__ na criação de um sistema bancário com o pacote tkinter e o modulo ttk(ThemedTk).
@@ -109,12 +109,12 @@ Trabalho prático em python aplicando conceitos de __GUI__ , __OOP__ e __DB__ na
 * Atualização de patrimônios;
 * Registro de Atualizações;
 * Mudança de Tema;
-## 2.2. Banco de dados
-### 2.2.1. DER
+### 2.2. Banco de dados
+#### 2.2.1. DER
 |Diagrama entidade-relacionamento|
 |:---:|
 |![Conceitual_patrimonio](https://github.com/user-attachments/assets/df562a67-deeb-474e-a359-7bad68c5fce7)|
-### 2.2.2. Dump
+#### 2.2.2. Dump
 ```sql
 create table patrimonios(
     id integer not null primary key autoincrement, 
@@ -170,7 +170,7 @@ insert into tema(id, nome)
 values (1, 'litera');
 ```
 
-## 2.4. Resultado
+### 2.3. Resultado
 |Tela inicial do gerenciador patrimonial|
 |:---:|
 |![inicial](https://github.com/user-attachments/assets/dabb96eb-80e9-4172-b56f-c6f5df793404)|
