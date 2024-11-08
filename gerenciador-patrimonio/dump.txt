@@ -1,0 +1,52 @@
+create table patrimonios(
+    id integer not null primary key autoincrement, 
+    nome_item varchar(255) not null, 
+    marca varchar(255) null, 
+    modelo varchar(255) null, 
+    n_serie varchar(255) null,
+    carac text null, 
+    valor double null, 
+    d_aquisicao date null, 
+    d_registro date default (date('now')),
+    status integer default 1, 
+    id_local integer not null, 
+    id_categ integer not null, 
+    constraint fk_pat_local foreign key (id_local) references locais(id), 
+    constraint fk_pat_categ foreign key (id_categ) references categorias(id)
+);
+
+create table locais(
+    id integer not null primary key autoincrement, 
+    nome varchar(255) not null, 
+    descricao text not null, 
+    status integer default 1
+);
+
+create table categorias(
+    id integer not null primary key autoincrement, 
+    nome varchar(255) not null, 
+    descricao text not null, 
+    status integer default 1
+);
+
+create table registros(
+    id integer not null primary key autoincrement,
+    registro varchar(255) not null, 
+    d_registro date default (date('now')),
+    id_patrimonio integer not null, 
+    constraint fk_reg_patrimonio foreign key (id_patrimonio) references patrimonios(id)
+);
+
+create table tema(
+    id integer not null primary key autoincrement, 
+    nome varchar(255) not null
+);
+
+insert into locais(nome, descricao, status)
+values ('Sem local', 'Categoria padrão do sistema', 2);
+
+insert into categorias(nome, descricao, status)
+values ('Sem categoria', 'Categoria padrão do sistema', 2);
+
+insert into tema(id, nome)
+values (1, 'litera');
