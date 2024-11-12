@@ -96,6 +96,7 @@ class ComponentesCadastro:
                                        state='readonly', 
                                        bootstyle=SUCCESS)
         self.cbb_status.grid(row=5, column=2, sticky='ew', padx=5, pady=5)
+        self.cbb_status.bind('<MouseWheel>', lambda e: 'break')
 
     def config_acesso(self, campos):
         def desativar_widgets():
@@ -329,6 +330,7 @@ class ComponentesCadastro:
         self.lbl_local.grid(row=2, column=1)
         self.cbb_local = ttk.Combobox(self.frame, textvariable=self.local_var, state='readonly')
         self.cbb_local.grid(row=3, column=1)
+        self.cbb_local.bind('<MouseWheel>', lambda e: 'break')
         self.cbb_local.bind('<<ComboboxSelected>>', lambda e: self.cadastro_bind())
         self.cbb_local.bind('<FocusIn>', lambda e: self.atualiza_bind())
         # categoria
@@ -337,6 +339,7 @@ class ComponentesCadastro:
         self.lbl_cat.grid(row=2, column=2)
         self.cbb_cat = ttk.Combobox(self.frame, textvariable=self.cat_var, state='readonly')
         self.cbb_cat.grid(row=3, column=2)
+        self.cbb_cat.bind('<MouseWheel>', lambda e: 'break')
         self.cbb_cat.bind('<<ComboboxSelected>>', lambda e: self.cadastro_bind())
         self.cbb_cat.bind('<FocusIn>', lambda e: self.atualiza_bind())
         # data aquisição
@@ -424,7 +427,7 @@ class ComponentesCamposEdit:
         self.fr_nserie.pack(side='left', padx=2, pady=2)
         # componentes
         self.nserie_var = ttk.StringVar()
-        self.lbl_nserie = ttk.Label(self.fr_nserie, text='Nome do item', font='helveitica, 10 bold')
+        self.lbl_nserie = ttk.Label(self.fr_nserie, text='N° de série', font='helveitica, 10 bold')
         self.lbl_nserie.pack(anchor='w')
         self.ent_nserie = ttk.Entry(self.fr_nserie, textvariable=self.nserie_var)
         self.ent_nserie.pack(anchor='w')

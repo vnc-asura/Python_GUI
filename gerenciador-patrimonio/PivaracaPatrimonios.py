@@ -20,7 +20,7 @@ class Tela:
         style.configure('TLabelframe.Label', font=('Helvetica', 16, 'bold'))
         style.configure('Toolbutton', font=('Helvetica', 16, 'bold'))
         style.configure('TNotebook.Tab', font=('helvatica', 16, 'bold'))
-        style.configure('Treeview', font=('helvetica', 12), rowheight=18)
+        style.configure('Treeview', font=('helvetica', 12), rowheight=24)
         style.configure('Treeview.Heading', font=('helvetica', 13, 'bold'))
         style.configure('TMenubutton', font=('helvetica', 16, 'bold'))
         

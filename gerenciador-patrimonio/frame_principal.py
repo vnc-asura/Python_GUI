@@ -59,7 +59,7 @@ class FramePatrimonios:
         # widgets
         # treeview and scroll
         self.scr_tree = ttk.Scrollbar(self.frame, style=ROUND)
-        self.scr_tree.grid(row=0, column=1, sticky='ns')
+        self.scr_tree.pack(side='right', fill='y')
         colunas = {'ID': 'id', 
                    'Nº de série': 'num_serie',
                    'Descrição': 'descricao', 
@@ -67,15 +67,15 @@ class FramePatrimonios:
                    'Valor': 'valor'}
         colunas_tam = {'id': 80, 
                        'num_serie': 200, 
-                       'descricao': 600, 
-                       'status': 100, 
+                       'descricao': 560, 
+                       'status': 140, 
                        'valor': 150}
         self.tree = ttk.Treeview(self.frame, 
                                  columns=list(colunas.values()), 
                                  show='headings', 
                                  yscrollcommand=self.scr_tree.set, 
                                  selectmode='browse')
-        self.tree.grid(row=0, column=0)
+        self.tree.pack(side='right', fill='both', expand=True)
         self.tree.bind('<Double-1>', lambda e: self.ref.catch_fpatrimonio())
         self.tree.bind('<Escape>', lambda e: self.limpar_selecao())
         self.scr_tree.config(command=self.tree.yview)
@@ -89,7 +89,7 @@ class FrameNotebookPatrimonio:
     def frame_pesquisar(self):
         # frame pesquisa
         self.fr_pesquisa = ttk.Frame(self.frame, style=INFO)
-        self.fr_pesquisa.pack(fill='x', expand=True, padx=5, pady=5)
+        self.fr_pesquisa.pack(fill='x', padx=5, pady=5)
         self.att_fr_pesquisa = FramePesquisar(self.fr_pesquisa, self)
 
     # captura o interação com a Classe FramePatrimonio (método padrão de acesso)
@@ -107,7 +107,7 @@ class FrameNotebookPatrimonio:
         
     def frame_button(self):
         self.fr_button = ttk.Frame(self.frame, style=INFO)
-        self.fr_button.pack(fill='x', expand=True, padx=5, pady=5)
+        self.fr_button.pack(fill='x', padx=5, pady=5)
         self.fr_button.columnconfigure(0, weight=1)
         # menubutton
         self.mbt_add = ttk.Menubutton(self.fr_button, text='Adicionar +', direction='above', style=(SUCCESS, OUTLINE))
@@ -169,7 +169,7 @@ class FrameNotebookPatrimonio:
 class FrameNotebookRegistro:
     def frame_pesquisar(self):
         self.fr_pesquisa = ttk.Frame(self.frame, style=INFO)
-        self.fr_pesquisa.pack(fill='x', expand=True)
+        self.fr_pesquisa.pack(fill='x')
         FramePesquisar(self.fr_pesquisa, self)
 
     def pesquisa_bind(self, entrada):
@@ -180,27 +180,27 @@ class FrameNotebookRegistro:
             dados = JControl.ref.crud.get(sql)
             self.att_tree(dados)
         else:
-            self.ref.att_patrimonios()
+            self.ref.att_registros()
 
     def frame_registros(self):
         self.fr_reg = ttk.Frame(self.frame)
         self.fr_reg.pack(fill='both', expand=True, padx=5, pady=5)
         # treeview and scroll
         self.scr_tree = ttk.Scrollbar(self.fr_reg, style=ROUND)
-        self.scr_tree.grid(row=0, column=1, sticky='ns')
+        self.scr_tree.pack(side='right', fill='y', expand=True)
         colunas = {'ID': 'id',
                    'Data': 'data', 
                    'Patrimônio': 'patrimonio',
                    'Registro': 'registro'}
         colunas_tam = {'id': 80,
-                      'data': 100, 
+                      'data': 120, 
                       'patrimonio': 150,
-                      'registro': 780}
+                      'registro': 760}
         self.tree = ttk.Treeview(self.fr_reg, 
                                  columns=list(colunas.values()), 
                                  show='headings', 
                                  yscrollcommand=self.scr_tree.set)
-        self.tree.grid(row=0, column=0)
+        self.tree.pack(side='left', fill='both', expand=True)
 
         for nome, var in colunas.items():
             self.tree.heading(var, text=nome)
@@ -272,7 +272,7 @@ class FramePrincipal:
 
     def label_frame_qtd_total(self):
         #label frame
-        self.lfr_qtotal = ttk.LabelFrame(self.frame, text='Qantidade total')
+        self.lfr_qtotal = ttk.LabelFrame(self.frame, text='Quantidade total')
         self.lfr_qtotal.grid(row=0, column=0, sticky='nsew')
         self.lfr_qtotal.rowconfigure(0, weight=1)
         self.lfr_qtotal.columnconfigure(0, weight=1)
