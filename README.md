@@ -13,6 +13,7 @@ __Conteúdos:__
 ---
 ## 1. Sistema bancário
 Trabalho prático em python aplicando conceitos de __GUI__ e __OOP__ na criação de um sistema bancário com o pacote tkinter e o modulo ttk(ThemedTk).
+Para fazer o download do executável clique [aqui!](https://github.com/vnc-asura/Python_GUI/releases/tag/v.1.0-sistema-bancario)
 ### 1.1. Instruções
 1. Implemente uma interface gráfica para o sistema bancário que permita instanciar outras
 janelas do sistema por meio do widget Menu?
@@ -101,7 +102,7 @@ class Cliente:
 |![Tela para consulta ao banco](https://github.com/user-attachments/assets/1797a69d-f14a-4460-b200-6e5ebac50344)|
 
 ## 2. Gerenciador patrimonial
-Trabalho prático em python aplicando conceitos de __GUI__ , __OOP__ e __DB__ na criação de um sistema para gerenciamento de patrimônios com o pacote ttkbootstrap e sqlite3.
+Trabalho prático em python aplicando conceitos de __GUI__ , __OOP__ e __DB__ na criação de um sistema para gerenciamento de patrimônios com o pacote ttkbootstrap e sqlite3. Para fazer o download do executável clique [aqui!](https://github.com/vnc-asura/Python_GUI/releases/tag/v.1.0-gerenciador-patrimonial)
 ### 2.1. Funcionalidades
 * Cadastro de categorias dos itens;
 * Cadastro de locais;
