@@ -204,7 +204,7 @@ values (1, 'litera');
 |:---:|
 |![mult-edicao](https://github.com/user-attachments/assets/decd80db-2d95-4b2a-a4ae-a215c060d263)|
 
-|Tela acessso e atualização de patrimônio|
+|Tela acesso e atualização de patrimônio|
 |:---:|
 |![att](https://github.com/user-attachments/assets/6b7b1b67-815a-4cc5-b2fd-46f749a582a7)|
 
